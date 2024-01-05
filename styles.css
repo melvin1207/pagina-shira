@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  background-color: bisque;
+  border-radius: 20px;
+  height: 80vh;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corazon{
+  width: 30%;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.love {
+  width: 190px;
+  height: 190px;
+  transform: rotate(45deg);
+  background: red;
+}
+
+.love:before,
+.love:after {
+  content: "";
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.love:before {
+  top: 0;
+  left: -95px;
+}
+
+.love:after {
+  top: -95px;
+}
+
+.carta{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media(max-width:1000px){
+  .carta{
+    font-size: 12px;
+  }
+
+  .love {
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    background: red;
+  }
+  
+  .love:before,
+  .love:after {
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+  }
+  
+  .love:before {
+    top: 0;
+    left: -40px;
+  }
+  
+  .love:after {
+    top: -40px;
+  }
+}
